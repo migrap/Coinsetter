@@ -1,0 +1,40 @@
+﻿using Coinsetter.Collections.Generic;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Coinsetter.Linq
+{
+    public static partial class Extensions {		
+<#for(int i=0;i<=16;i++){#>
+
+		public static IEnumerable<TSource> Distinct<TSource>(this IEnumerable<TSource> source, <#FormatRange("Expression<Func<TSource,object>> arg{0}", ", ", 0, i);#>){
+			return source.Distinct(new PropertiesEqualityComparer<TSource>(<#FormatRange("arg{0}", ", ", 0, i);#>));
+		}
+<#}#>	
+    }
+}
+<#+ 
+	private void FormatRange(string itemFormatString, int start, int end)
+	{
+		for(int i = start; i <= end; i++)
+		{
+			this.Write(string.Format(itemFormatString, i));
+		}
+	}
+
+	private void FormatRange(string itemFormatString, string separatorFormatString, int start, int end)
+	{
+		for(int i = start; i <= end; i++)
+		{
+			this.Write(string.Format(itemFormatString, i));
+			if(i != end)
+			{
+				this.Write(string.Format(separatorFormatString, i));
+			}
+		}
+	}
+#>

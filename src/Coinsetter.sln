@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.21901.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coinsetter", "Coinsetter\Coinsetter.csproj", "{3DCBF6AF-9C9F-4FC6-BB48-85CBA0056ED6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{3ED901E7-47C5-42FB-97FA-F11EB462B228}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{28BAB1AA-1FB3-41DC-A48B-BF3603928206}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newtonsoft.Json.Net40", "..\..\..\..\GitHub\Newtonsoft.Json\Src\Newtonsoft.Json\Newtonsoft.Json.Net40.csproj", "{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DCBF6AF-9C9F-4FC6-BB48-85CBA0056ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCBF6AF-9C9F-4FC6-BB48-85CBA0056ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DCBF6AF-9C9F-4FC6-BB48-85CBA0056ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCBF6AF-9C9F-4FC6-BB48-85CBA0056ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ED901E7-47C5-42FB-97FA-F11EB462B228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ED901E7-47C5-42FB-97FA-F11EB462B228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ED901E7-47C5-42FB-97FA-F11EB462B228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ED901E7-47C5-42FB-97FA-F11EB462B228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
